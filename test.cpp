@@ -40,3 +40,22 @@ int main()
 
     return 0;
 }
+
+
+
+
+
+// #include <iostream>
+// using namespace std;
+
+// int main()
+// {
+//     int *r;
+//     int arr[]{15, 16, 17};
+//     cout << arr[0] << "\n";
+//     cout << &arr[2] << "\n";
+//     cout << *(arr + 2) << "\n";
+//     // cout << arr << "\n";
+
+
+// }
