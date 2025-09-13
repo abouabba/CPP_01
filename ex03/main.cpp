@@ -4,8 +4,20 @@
 
 int main()
 {
-    Weapon *W = new Weapon("Sword");
-    std::cout << W->getType() << std::endl;
-    delete W; // free memory
+    // {
+        Weapon club = Weapon("crude spiked club");
+        // HumanA bob("Bob", club);
+        // bob.attack();
+        // club.setType("some other type of club");
+        // bob.attack();
+    // }
+    // {
+        // Weapon club = Weapon("crude spiked club");
+        // HumanB jim("Jim");
+        // jim.setWeapon(club);
+        // jim.attack();
+        // club.setType("some other type of club");
+        // jim.attack();
+    // }
     return 0;
 }

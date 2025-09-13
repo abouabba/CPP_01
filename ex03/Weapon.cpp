@@ -1,8 +1,7 @@
 #include "Weapon.hpp"
 
-
 Weapon::Weapon(std::string type) {
-    std::cout << type << "Weapon constructor called" << std::endl;
+    std::cout << type << std::endl;
 }
 
 void Weapon::setType(const std::string& type) {
