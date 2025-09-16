@@ -3,10 +3,10 @@
 #include <iostream>
 
 class HumanA {
+    public:
+    HumanA(std::string name, Weapon& ewapon);
+    void attack();
     private:
         std::string name;
         Weapon& weapon;
-    public:
-        HumanA(std::string name, Weapon& ewapon);
-        void attack();
 };
