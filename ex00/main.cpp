@@ -1,8 +1,8 @@
-#include <Zombie.hpp>
+#include "Zombie.hpp"
 
 int main() {
-	Zombie *name = newZombie("walker");
+	Zombie *name = newZombie("Negan");
 	name->announce();
-	randomChump("abouabba");
+	randomChump("Lucille");
 	delete name;
 }

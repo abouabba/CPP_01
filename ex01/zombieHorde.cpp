@@ -4,10 +4,10 @@ Zombie* zombieHorde( int N, std::string name)
 {
     if (N <= 0)
         return NULL;
-    Zombie *Moar = new Zombie[N];
+    Zombie *Negan = new Zombie[N];
     for (int i = 0; i < N; i++)
     {
-        Moar[i].setname(name);
+        Negan[i].setname(name);
     }
-    return Moar;
+    return Negan;
 }
