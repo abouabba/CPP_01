@@ -28,7 +28,6 @@ int main(int argc, char *argv[])
     {
         content.erase(pos, std::string(argv[2]).length());
         content.insert(pos, argv[3]);
-        // pos += std::string(argv[3]).length();
     }
     std::ofstream file_out(std::string(argv[1]) + ".replace");
     if (!file_out.is_open())
