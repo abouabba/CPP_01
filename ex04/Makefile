@@ -1,8 +1,7 @@
 CC = c++
 CFLAGS = -Wall -Wextra -Werror -std=c++98
-NAME = Weapons
+NAME = replaces
 SRCS = main.cpp
-# HEADRS = Replace.hpp
 OBGS = ${SRCS:.cpp=.o}
 
 all: ${NAME}
@@ -10,7 +9,7 @@ all: ${NAME}
 ${NAME}: ${OBGS}
 	${CC} ${CFLAGS} -o ${NAME} ${OBGS}
 
-%.o: %.cpp # ${HEADRS}
+%.o: %.cpp
 	${CC} ${CFLAGS} -c $< -o $@
 
 clean:

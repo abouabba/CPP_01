@@ -2,7 +2,6 @@
 
 Weapon::Weapon(std::string type) {
     this->type = type;
-    std::cout << type << std::endl;
 }
 
 void Weapon::setType(const std::string& type) {

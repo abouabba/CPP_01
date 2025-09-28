@@ -2,10 +2,10 @@
 #include "Weapon.hpp"
 #include <iostream>
 
-class HumanA {
+struct HumanA {
     public:
-    HumanA(std::string name, Weapon& ewapon);
-    void attack();
+        HumanA(std::string name, Weapon& ewapon);
+        void attack();
     private:
         std::string name;
         Weapon& weapon;
