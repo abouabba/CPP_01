@@ -2,7 +2,7 @@
 #include "Weapon.hpp"
 #include <iostream>
 
-struct HumanA {
+class HumanA {
     public:
         HumanA(std::string name, Weapon& ewapon);
         void attack();
