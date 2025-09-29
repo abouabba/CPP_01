@@ -20,9 +20,8 @@ int main(int argc, char *argv[])
         return 1;
     }
     std::string content;
-    std::string line;
     while (std::getline(file, content, '\0'));
-    std::string::size_type pos = 0;
+    size_t pos = 0;
     while ((pos = content.find(argv[2], pos)) != std::string::npos)
     {
         content.erase(pos, std::string(argv[2]).length());
