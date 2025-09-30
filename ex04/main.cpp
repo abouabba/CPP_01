@@ -8,7 +8,7 @@ int main(int argc, char *argv[])
         std::cout << "Error: wrong number of arguments" << std::endl;
         return 1;
     }
-    if (argv[2][0] == '\0' )
+    if (argv[2][0] == '\0')
     {
         std::cout << "Error: empty string" << std::endl;
         return 1;
@@ -20,12 +20,13 @@ int main(int argc, char *argv[])
         return 1;
     }
     std::string content;
-    while (std::getline(file, content, '\0'));
+    std::getline(file, content, '\0');
     size_t pos = 0;
     while ((pos = content.find(argv[2], pos)) != std::string::npos)
     {
         content.erase(pos, std::string(argv[2]).length());
         content.insert(pos, argv[3]);
+        pos += std::string(argv[3]).length();
     }
     std::ofstream file_out((std::string(argv[1]) + ".replace").c_str());
     if (!file_out.is_open())
